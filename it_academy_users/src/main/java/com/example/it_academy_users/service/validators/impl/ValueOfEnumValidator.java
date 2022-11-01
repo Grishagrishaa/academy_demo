@@ -1,6 +1,5 @@
 package com.example.it_academy_users.service.validators.impl;
 
-import com.example.it_academy_users.dao.entity.enums.ERole;
 import com.example.it_academy_users.service.validators.api.ValueOfEnum;
 
 import javax.validation.ConstraintValidator;
@@ -21,8 +20,8 @@ public class ValueOfEnumValidator implements ConstraintValidator<ValueOfEnum, Ch
 
     @Override
     public boolean isValid(CharSequence value, ConstraintValidatorContext context) {
-        if (value == null) {
-            return true;
+        if(value == null || value.length() == 0) {
+            return false;
         }
 
         return acceptedValues.contains(value.toString());
