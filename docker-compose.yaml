@@ -2,27 +2,27 @@ version: '3.5'
 services:
   db:
     build: mysql
-    image: users_mysql:1.0.0
+    image: consumers_mysql:1.0.0
     ports: 
       - 3307:3306
     restart: always
     environment:
-      MYSQL_DATABASE: users
+      MYSQL_DATABASE: consumers
       MYSQL_ROOT_PASSWORD: Grisha11234
     volumes:
       - /docker-entrypoint-initdb.d
     networks:
-      - users_ntwrk
+      - consumers_ntwrk
 
-  it_academy_users:
-    build: it_academy_users
-    image: it_academy_users:1.0.0
+  consumers_demo:
+    build: consumers_demo
+    image: consumers_demo:1.0.0
     ports:
       - 80:8080
     restart: always
     networks:
-      - users_ntwrk
+      - consumers_ntwrk
 
 networks:
-  users_ntwrk:
-    name: users_ntwrk
+  consumers_ntwrk:
+    name: consumers_ntwrk
