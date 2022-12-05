@@ -23,44 +23,74 @@ Consumer_Demo
 
 *Response:*
 ```json
-[
-  {
-    "id": 1,
-    "topic": "one",
-    "description": "one",
-    "organizer": "one",
-    "date_time": "2022-11-11T00:00:00",
-    "place": "one",
-    "version": 0
-  },
-  {
-    "id": 2,
-    "topic": "two",
-    "description": "two",
-    "organizer": "two",
-    "date_time": "2022-11-11T00:00:00",
-    "place": "two",
-    "version": 0
-  }
-]
+{
+    "content": [
+        {
+            "uuid": "35bee671-c993-49e8-921f-c65327022785",
+            "create_date": "2022-12-05T20:02:39.000Z",
+            "update_date": 1670270559000,
+            "name": "Grisha",
+            "surname": "MITSKEVICH",
+            "patronymic": "Dmitrievich",
+            "email": "aboba.private@gmail.com",
+            "role": "ROLE_USER"
+        },
+        {
+            "uuid": "8fb7f8b5-efc9-4e23-ba17-4e1bb1c7e149",
+            "create_date": "2022-12-05T20:07:46.000Z",
+            "update_date": 1670270866000,
+            "name": "Java",
+            "surname": "Developer",
+            "patronymic": "Senior",
+            "email": "senior.java@gmail.com",
+            "role": "ROLE_USER"
+        }
+    ],
+    "pageable": {
+        "sort": {
+            "empty": false,
+            "sorted": true,
+            "unsorted": false
+        },
+        "offset": 0,
+        "page_number": 0,
+        "page_size": 10,
+        "paged": true,
+        "unpaged": false
+    },
+    "last": true,
+    "total_pages": 1,
+    "total_elements": 2,
+    "size": 10,
+    "number": 0,
+    "sort": {
+        "empty": false,
+        "sorted": true,
+        "unsorted": false
+    },
+    "first": true,
+    "number_of_elements": 2,
+    "empty": false
+}
 ```
 >200 OK
 ## Get Meetup by ID
 
 *Request:*
 
-`localhost/api/v1/consumers/d9f20b28-7eca-47e7-b3d1-e3916984e1eb`
+`localhost/api/v1/consumers/35bee671-c993-49e8-921f-c65327022785`
 
 *Response:*
 ```json
 {
-    "id": d9f20b28-7eca-47e7-b3d1-e3916984e1eb,
-    "topic": "one",
-    "description": "one",
-    "organizer": "one",
-    "date_time": "2022-11-11T00:00:00",
-    "place": "one",
-    "version": 0
+    "uuid": "35bee671-c993-49e8-921f-c65327022785",
+    "create_date": "2022-12-05T20:02:38.529Z",
+    "update_date": 1670270558561,
+    "name": "Grisha",
+    "surname": "Mitskevich",
+    "patronymic": "Dmitrievich",
+    "email": "aboba.private@gmail.com",
+    "role": "ROLE_USER"
 }
 
 ```
