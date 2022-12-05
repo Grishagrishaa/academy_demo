@@ -1,5 +1,4 @@
 # consumers_dem
-Consumer_Demo
 
 ## How to build
 1. Build project: mvn clean install
@@ -15,7 +14,7 @@ Consumer_Demo
 |      `PUT`      | localhost/api/v1/consumers/{uuid}/dt_update/{dt_update} | Update Entity by ID and dt_update |
 |    `DELETE`     | localhost/api/v1/consumers/{uuid}/dt_update/{dt_update} | Delete Entity by ID and dt_update |
 
-## Get All meetups
+## Get All Entities
 
 *Request:*
 
