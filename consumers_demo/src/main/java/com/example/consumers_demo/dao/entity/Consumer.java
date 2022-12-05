@@ -60,27 +60,24 @@ public class Consumer implements Serializable {
         return uuid;
     }
 
-    public Consumer setUuid(UUID uuid) {
+    public void setUuid(UUID uuid) {
         this.uuid = uuid;
-        return this;
     }
 
     public LocalDateTime getCreateDate() {
         return createDate;
     }
 
-    public Consumer setCreateDate(LocalDateTime createDate) {
+    public void setCreateDate(LocalDateTime createDate) {
         this.createDate = createDate;
-        return this;
     }
 
     public LocalDateTime getUpdateDate() {
         return updateDate;
     }
 
-    public Consumer setUpdateDate(LocalDateTime updateDate) {
+    public void setUpdateDate(LocalDateTime updateDate) {
         this.updateDate = updateDate;
-        return this;
     }
 
     public String getName() {
@@ -132,7 +129,6 @@ public class Consumer implements Serializable {
         private String patronymic;
         private String email;
         private ERole role;
-
         private Builder() {
         }
 
