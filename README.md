@@ -1,4 +1,4 @@
-# consumers_dem
+# Intervale demo
 
 ## How to build
 1. Build project: mvn clean install
