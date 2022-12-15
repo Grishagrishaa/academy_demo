@@ -1,4 +1,4 @@
-# Intervale demo
+# Intervale test task
 
 ## How to build
 1. Build project: mvn clean install
