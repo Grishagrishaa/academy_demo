@@ -1,5 +1,8 @@
 # Intervale test task
 
+# Technology stack Spring Boot (Web, Data JPA, Validation), MySQL, Liquibase, Swagger, Docker:
+
+
 ## How to build
 1. Build project: mvn clean install
 2. To run environment: docker compose up
