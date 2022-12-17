@@ -1,4 +1,4 @@
-# Intervale test task
+# IT-Academy BootCamp test task
 
 # Technology stack:
 **`Spring Boot (Web, Data JPA, Validation)`**, **`MySQL`**, **`Liquibase`**, **`Swagger`**, **`Docker`**, **`Maven`**. 
